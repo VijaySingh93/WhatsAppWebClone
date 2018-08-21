@@ -1,0 +1,145 @@
+.header-bar{
+  background-color: #ecefe6;
+}
+
+.search-bar{
+  background-color: #f7faff;
+}
+
+body {
+  font-family: 'Lekton', sans-serif;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.search-bar > div > input {
+	border-right: none;
+}
+
+.search-bar > div > div {
+	border-left: none;
+}
+
+.search-bar > div > div > span {
+	background-color: white;
+}
+
+.chat-list {
+	overflow-y: auto;
+}
+
+.chats > a > div {
+	padding: 10px 15px;
+	border-bottom: 0.5px solid grey;
+}
+
+.chats > a > div:hover {
+	background-color: #D3D3D3;
+}
+
+.message-body {
+	background-image: url("../img/whatsapp.jpg");
+	overflow-y: auto;
+}
+
+/*Settings for each chat bubble start*/
+
+.m-received > .message {
+	border-radius: 10px 10px 10px 0px;
+	background-color: white;
+}
+
+.m-sent > .message {
+	border-radius: 10px 10px 0px 10px;
+	background-color: #ccffdd;
+}
+
+.m-received > .message, .m-sent > .message {
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	margin: 5px 0;
+	min-width: 140px;
+	max-width: 80%;
+}
+
+.msg-timestamp {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 5px;
+}
+
+.m-received > div > p, .m-sent > div > p {
+	margin-bottom: 10px;
+}
+/*Settings for each chat bubble end*/
+
+.dropdown-menu {
+	  margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-item:hover {
+	background-color: #F0F0F0;
+}
+
+.dropdown-toggle::before,
+.dropdown-toggle::after {
+    border: none !important;
+    content: none !important;
+}
+
+.dropdown-toggle{
+  transition: color 2s ease-in;
+	display: block;
+	width: 20px;
+}
+
+.dropdown-divider {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
